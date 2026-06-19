@@ -1,0 +1,19 @@
+(defwidget bar []
+  (box :class "bar-container" :orientation "h" :space-evenly false
+    (label :class "text" :text "🕒 14:41  💻 12%")
+    
+    (box :hexpand true)
+    
+    (button :class "icon-btn" :onclick "firefox https://youtube.com" "")
+    (button :class "icon-btn" :onclick "firefox https://instagram.com" "")
+    (button :class "icon-btn" :onclick "telegram-desktop" "")
+    (button :class "icon-btn" :onclick "firefox" "")
+  ))
+
+(defwindow mybar
+  :monitor 0
+  :geometry (geometry :x "0%" :y "0%" :width "100%" :height "30px" :anchor "top center")
+  :stacking "fg"
+  :reserve (struts :side "top" :distance "30px")
+  :wm-ignore false
+  (bar))

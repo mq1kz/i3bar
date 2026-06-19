@@ -1,0 +1,26 @@
+.bar-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: black;
+    padding: 5px 20px;
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands";
+    border-bottom: 1px solid rgba (255, 255, 255, 0.2);
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;     
+    margin: 0 10px;      
+    transition: 0.2s;
+}
+
+.icon-btn:hover {
+    color: #3498db;
+    cursor: pointer;
+}
+
+.text {
+    font-family: "Sans-Serif";
+    font-size: 14px;
+}
